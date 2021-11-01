@@ -1,0 +1,110 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    /* border: red solid 1px; */
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    padding:2px 5px;
+    background-color: black;
+    border-radius: 10px;
+    
+
+}
+.dashboard{
+    background-color: black;
+    width:100%;
+    height:25vh;
+}
+.calculator{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border:1px solid black;
+    height:50%;
+    text-align: center;
+    grid-gap: 4px;
+    
+    
+    
+}
+
+.pn,.back,.AC{
+    color:black;
+    background-color: grey;
+    border:none
+
+}
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    width:90%;
+    height:9vh;
+    border-radius: 40%;
+    text-align: center;
+    
+}
+.divide{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    width:90%;
+    height:9vh;
+    border-radius: 40%;
+    text-align: center;
+    vertical-align: center;
+}
+.zero{   background-color:rgb(87, 85, 85);
+    color:white;
+    border:none;
+    border-radius: 15px;
+}
+.divzero{
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+.minus,.plus,.equal,.divide,.times{
+    color:white;
+    background-color: darkorange;
+    border:none;
+}
+
+.number,.point{
+    background-color:rgb(87, 85, 85);
+    color:white;
+    border:none;
+}
+.firstdashboard,.seconddashboard{
+    color:white;
+    text-align: right;
+    width:100%;
+    height:12vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.firstdashboard{
+    font-size:1.2rem;
+}
+@media screen and (max-width:1200px){
+    .container{width:40% ;}
+}
+@media screen and (max-width:650px){
+    .container{width:60% ;}
+}
+@media screen and (max-width:411px){
+    .container{width:100% ;}
+}
